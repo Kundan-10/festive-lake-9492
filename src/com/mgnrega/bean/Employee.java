@@ -6,20 +6,20 @@ public class Employee {
 	private String ename;
 	private String emobile;
 	private String eaddress;
-	private int dayworked;
-	private int ewages;
+	private int etotaldaywork;
+	private String ewages;
 
 	public Employee() {
 		
 	}
 
-	public Employee(int eid, String ename, String emobile, String eaddress, int dayworked, int ewages) {
+	public Employee(int eid, String ename, String emobile, String eaddress, int etotaldaywork, String ewages) {
 		super();
 		this.eid = eid;
 		this.ename = ename;
 		this.emobile = emobile;
 		this.eaddress = eaddress;
-		this.dayworked = dayworked;
+		this.etotaldaywork = etotaldaywork;
 		this.ewages = ewages;
 	}
 
@@ -56,24 +56,24 @@ public class Employee {
 	}
 
 	public int getDayworked() {
-		return dayworked;
+		return etotaldaywork;
 	}
 
 	public void setDayworked(int dayworked) {
-		this.dayworked = dayworked;
+		this.etotaldaywork = dayworked;
 	}
 
-	public int getEwages() {
+	public String getEwages() {
 		return ewages;
 	}
 
-	public void setEwages(int ewages) {
+	public void setEwages(String ewages) {
 		this.ewages = ewages;
 	}
 
 	@Override
 	public String toString() {
 		return "Employee [eid=" + eid + ", ename=" + ename + ", emobile=" + emobile + ", eaddress=" + eaddress
-				+ ", dayworked=" + dayworked + ", ewages=" + ewages + "]";
+				+ ", dayworked=" + etotaldaywork + ", ewages=" + ewages + "]";
 	}
 }

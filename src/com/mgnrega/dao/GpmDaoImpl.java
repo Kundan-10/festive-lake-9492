@@ -147,22 +147,22 @@ public class GpmDaoImpl implements GpmDao{
 		 	
 		 			PreparedStatement ps3= conn.prepareStatement("insert into project_employee values(?,?)");
 		 		
-		 			ps3.setInt(1, eid);
-		 			ps3.setInt(2, pid);
+		 			ps3.setInt(1, pid);
+		 			ps3.setInt(2, eid);
 		 			
 		 			int x= ps3.executeUpdate();
 		 			
 		 			if(x > 0)
-		 				message = "Student registered inside the Course Sucessfully.. ";
+		 				message = "Employee registered inside the Project Sucessfully.. ";
 		 			else
 		 				throw new EmployeeException("Techical error..");
 				
 		 		}
 		 		else
-		 			throw new ProjectException("Invalid Course...");
+		 			throw new ProjectException("Invalid Project...");
 		
 		 	}else
-		 		throw new EmployeeException("Invalid Student...");
+		 		throw new EmployeeException("Invalid Employee...");
 		
 		} catch (SQLException e) {
 			throw new EmployeeException(e.getMessage());

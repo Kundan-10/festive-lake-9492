@@ -8,15 +8,16 @@ public class Gpm {
 	private String gpassword;
 	private String gmobile;
 	private String gaddress;
-	private String bdoid;
+	private int bdoid;
 	
 	public Gpm() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Gpm(int gid, String gname, String gemail, String gpassword, String gmobile, String gaddress, String bdoid) {
+	public Gpm(int gid, String gname, String gemail, String gpassword, String gmobile, String gaddress, int bdoid) {
 		super();
+		
 		this.gid = gid;
 		this.gname = gname;
 		this.gemail = gemail;
@@ -74,12 +75,12 @@ public class Gpm {
 		this.gaddress = gaddress;
 	}
 
-	public String getBdoid() {
+	public int getBdoid() {
 		return bdoid;
 	}
 
-	public void setBdoid(String bdoid) {
-		this.bdoid = bdoid;
+	public void setBdoid(int bid) {
+		this.bdoid = bid;
 	}
 
 	@Override
