@@ -284,7 +284,7 @@ public class BdoDaoImple implements BdoDao{
 				String p = rs.getString("pname");
 //				int c = rs.getInt("pid");
 				
-				EmpDTO dto = new EmpDTO(n, m, a, d, p, w);
+				EmpDTO dto = new EmpDTO(n, m, a, d, w, p);
 				
 				edtos.add(dto);
 				

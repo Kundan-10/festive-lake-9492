@@ -79,7 +79,7 @@ public class UserActivity {
 				+ "         2. View List Of Project.\r\n"
 				+ "         3. Create new Gram Panchayat Member(GPM).\r\n"
 				+ "         4. View all the GPM.\r\n"
-				+ "         5. get AllEmployee By Pname.\r\n"
+				+ "         5. Allocate Project to GPM.\r\n"
 				+ "         6. get AllEmployee By Pname.\r\n"
 				+ "         7. Go Back");
 		
@@ -128,7 +128,7 @@ public class UserActivity {
 	public static void gpm() {
 		Scanner sc=new Scanner(System.in);
 		System.out.println(""
-				+ "        1. Register himself in a GPM with a username and password (email should be the username)\r\n"
+				+ "        1. Login to Grampanchayt please Enter your username and password \r\n"
 				+ "	2. Register Employee\r\n"
 				+ "        3. See List of Employee working on that Project on Name\r\n"
 				+ "        4. Assign Employee to a Project.\r\n"

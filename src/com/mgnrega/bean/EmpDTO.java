@@ -5,9 +5,10 @@ public class EmpDTO {
 	private String ename;
 	private String emobile;
 	private String eaddress;
-	private int dayworked;
+	private int etotaldaywork;
 	private int ewages;
 	private String pname;
+
 	
 
 	public EmpDTO() {
@@ -15,15 +16,25 @@ public class EmpDTO {
 	}
 
 
-	public EmpDTO(String ename, String emobile, String eaddress, int dayworked, int ewages, String pname) {
+	
+
+
+
+
+	public EmpDTO(String ename, String emobile, String eaddress, int etotaldaywork, int ewages, String pname) {
 		super();
 		this.ename = ename;
 		this.emobile = emobile;
 		this.eaddress = eaddress;
-		this.dayworked = dayworked;
+		this.etotaldaywork = etotaldaywork;
 		this.ewages = ewages;
 		this.pname = pname;
 	}
+
+
+
+
+
 
 
 	public String getEname() {
@@ -57,12 +68,12 @@ public class EmpDTO {
 
 
 	public int getDayworked() {
-		return dayworked;
+		return etotaldaywork;
 	}
 
 
-	public void setDayworked(int dayworked) {
-		this.dayworked = dayworked;
+	public void setDayworked(int etotoldayworke) {
+		this.etotaldaywork = etotoldayworke;
 	}
 
 
@@ -89,7 +100,7 @@ public class EmpDTO {
 	@Override
 	public String toString() {
 		return "EmployeeDTO [ename=" + ename + ", emobile=" + emobile + ", eaddress=" + eaddress + ", dayworked="
-				+ dayworked + ", ewages=" + ewages + ", pname=" + pname + "]";
+				+ etotaldaywork + ", ewages=" + ewages + ", pname=" + pname + "]";
 	}
 	
 
